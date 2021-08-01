@@ -1,0 +1,48 @@
+//
+// services.scss
+//
+
+.service-wrapper {
+    background-color: $white;
+}
+.service-wrapper, .wc-box-icon, .se-title, .se-subtitle {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.wc-box-icon {
+    background: rgba(97,204,204,0.12);
+    color: $primary;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.service-wrapper:hover {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    background: $primary;
+    .wc-box-icon {
+        background: $light;
+        -webkit-box-shadow: 0 0 0 7px rgba(255,255,255,0.40);
+        box-shadow: 0 0 0 7px rgba(255,255,255,0.40);
+    }
+    .content { 
+        .se-title {
+            color: $white !important;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .se-subtitle {
+            color: $white !important;
+        }
+    }   
+}
+.freelance-section {
+    background-image: url(../images/freelancer.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}

@@ -1,0 +1,69 @@
+//
+// general.scss
+//
+
+body {
+    font-family: $font-family-secondary;
+    overflow-x: hidden !important;
+    font-size: $font-size-base;
+    color: $black;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-base;
+    line-height: 1.5;
+    font-weight: 600;
+}
+::selection {
+    background: rgba($primary, 0.9);
+    color: $white;
+}
+a {
+    text-decoration: none !important;
+}
+p {
+    line-height: 1.6;
+}
+.shadow {
+    -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.para-desc {
+    max-width: 600px;
+}
+.section-title .title {
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+.mfp-iframe-holder .mfp-content {
+    max-width: 1110px;
+}
+.rounded-30 {
+    border-radius: 30px !important;
+}
+.font-17 {
+    font-size: 17px;
+}
+.pad-30 {
+    padding: 30px;
+}
+.mar-bottom {
+    margin-bottom: 30px;
+}
+.list-tag {
+    font-size: 14px;
+    font-weight: 600;
+}
+.fea.icon-sm {
+    height: 18px;
+    width: 18px;
+}
+.fea.icon-md {
+    height: 30px;
+    width: 30px;
+}

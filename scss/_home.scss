@@ -1,0 +1,85 @@
+//
+// home.scss
+//
+
+.bg-home {
+    padding: 220px 0;
+    background-size: cover;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    .alert.alert-pills {
+        border-radius: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: inline-block;
+        .content {
+            font-weight: 500;
+            font-size: $font-size-base;
+        }
+    }
+    .alert.alert-light {
+        background-color: #424040;
+        color: #3c4858;
+        border-color: #424040;
+    }
+    .badge {
+        padding: 4px 12px;
+        border-radius: 3px;
+        letter-spacing: 0.5px;
+        font-size: 12px;
+    }
+    .badge.badge-pill {
+        border-radius: 10px;
+    }
+    .badge-danger {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+    .heading {
+        color: $primary !important;
+    }
+    .text-primary {
+        color: $primary !important;
+    }
+}
+.text-muted {
+    color: #8492a6 !important;
+}
+.title-heading {
+    .heading {
+        font-size: 45px;
+    }
+    .sub-title {
+        font-size: 18px;
+    }
+}
+
+/* Home index-clip */
+.bg-darking {
+    background-color: #202942;
+}
+.clip-home {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+}
+.max-witdh-100 {
+    max-width: 100%;
+}
+.wave_sec {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.wave_sec svg {
+    height: 180px;
+}
+.avatar.avatar-lg {
+    height: auto;
+    width: 600px;
+}
+.h-100vh {
+    height: 100vh;
+}

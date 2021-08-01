@@ -1,0 +1,91 @@
+//
+//portfolio
+// 
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+.portfolioFilter li a {
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 0px 15px;
+    margin: 5px 3px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    line-height: 34px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;  
+    &:hover,
+    &.active {
+        color: $white !important;
+        background-color: $primary !important;
+    }
+}
+.portfolio-box {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    .portfolio-box-img {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        &:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        .overlay-work {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            background-color: rgba(60, 72, 88, 0.65);
+            &:hover {
+                opacity: 1;
+                transform: translateY(0); 
+            }
+            .work-content {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                transform: translateY(0);
+                h4 {
+                    color: $white;
+                    font-size: 20px;
+                    margin: 0 0 10px;
+                    padding: 0 20px;
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+                    position: absolute;
+                    top: 30px;
+                }
+            }
+            .more-button {
+                color: $white;
+                font-size: 20px;
+                display: block;
+                background: $primary;
+                border-radius: 100%;
+                height: 40px;
+                width: 40px;
+                line-height: 38px;
+                text-align: center;
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                opacity: 1;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }        
+    }
+    .gallary-title {
+        background: white;
+    }
+}

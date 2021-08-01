@@ -1,0 +1,52 @@
+//
+// about.scss
+//
+
+// .about-section {
+//     background-color: $white;
+//     box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+// }
+.about-hero{
+    border-radius: 15px;
+    img {
+        border: none;
+        -webkit-box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+        box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+    }
+}
+.content-info .single-info>p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.content-info a{
+    color: $primary !important;
+}
+
+/* Hobbies Icon  */
+.interests-desc .hobbies-icon {
+    background: rgba(97, 204, 204, 0.12);
+    color: $primary;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.interests-desc {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    &:hover {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        background: $primary !important;
+        .hobbies-icon {
+            background: $light;
+            -webkit-box-shadow: 0 0 0 7px rgba(255,255,255,0.40);
+            box-shadow: 0 0 0 7px rgba(255,255,255,0.40);
+        }
+        .content .title{
+            color: $white !important;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+//
+// variables.scss
+//
+
+// @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,7400;0,500;0,600;0,700;1,500&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
+
+// Color variables
+$white:                     #ffffff;
+$black:                     #161c2d;
+
+$primary:                   #61cccc; // primary color 3bafda
+$secondary:                 #f5f5f5; 
+$success:                   #28a745; 
+$info:                      #17a2b8;
+$warning:                   #ffc107;
+$danger:                    #dc3545;
+$muted:                     #707070;
+$dark:                      #3c4858;
+$light:                     #f8f9fa;
+
+$primary-second:            #ff4f64;
+
+// Body Background
+$body-bg:                   #f5f5f5;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "body-bg": $body-bg,
+    "black": $black,
+    "white": $white
+);
+
+
+// Font
+$font-size-base:               16px;
+
+$font-family-base:            'Nunito', sans-serif;
+$font-family-secondary:       'Nunito', sans-serif;
+
+

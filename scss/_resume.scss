@@ -1,0 +1,188 @@
+//
+// Resume 
+// 
+
+.main-icon {
+    background-color: $primary;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+    line-height: 34px;
+    text-align: center;
+    margin: 0px auto;
+    border: 2px solid $white;
+    .fea.icon-md-sm {
+        color: $white;
+    }
+}
+.timeline-page {
+    .timeline-item {
+        .date-label-left {
+            float: right;
+            margin-right: 15px;
+            &:after {
+                right: -10px;
+            }
+        }
+        .duration {
+            float: right;
+            border-radius: 50%;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            color: $white;
+            font-weight: 700;
+            border: 2px solid $white;
+            background: $primary;
+            box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.1) !important;
+            &:hover {
+                -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
+                box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
+            }
+        }
+        .duration-right {
+            float: left;
+            margin-left: 15px;
+            border-radius: 50% !important;
+            width: 40px;
+            height: 40px;
+            border: 2px solid $white !important;
+            &:after {
+                float: left;
+                margin-left: 15px;
+                content: "";
+                position: absolute;
+                left: -56px;
+                height: 70px;
+                width: 70px;
+                color: #5fc1cd;
+            }
+        }
+        
+        .event.event-description-right {
+            text-align: left;
+            margin-left: 15px;
+        }
+        .event.event-description-left {
+            text-align: right;
+            margin-right: 15px;
+        }
+    }
+    .event {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+        box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+        border-color: transparent !important;
+    }
+}
+.timeline-page {
+    .timeline-item {
+        .date-label-left:after,
+        .duration-right:after {
+            border: 2px solid $white;
+            content: "";
+            position: absolute;
+            top: 12px;
+            width: 20px;
+            height: 20px;
+            z-index: 1;
+            background-color: $primary;
+            border-radius: 30px;
+            box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+        }
+    }
+}
+.timeline-page:after {
+    background-color: $primary !important;
+    content: "";
+    height: 95%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
+@media (max-width: 767px) {
+    .main-icon {
+        margin: 0px !important;
+    }
+    .timeline-page {
+        margin-left: 18px;
+        .timeline-item {
+            .duration {
+                float: left !important;
+                margin: 0 0 30px 15px !important;
+                text-align: center !important;
+                &:after {
+                    left: -41px !important;
+                }
+            }
+        }
+        &:after {
+            margin: 0;
+        }
+        .date-label-left:after {
+            left: 6px;
+        }
+        .event-description-left {
+            text-align: left !important;
+            margin: 0 0 0 15px;
+        }
+    }
+}
+
+/* skill part */
+
+.container-skills {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border-color: transparent !important;
+}
+
+.progress-box .progress {
+    height: 8px;
+    overflow: visible;
+    border: 2px solid $primary;
+}
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+.skill-box .progress-box .progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    font-size: 13px;
+}
+
+.skill-box .progress-box .progress .progress-bar {
+    border-radius: 6px;
+    -webkit-animation: animate-positive 3s;
+    animation: animate-positive 3s;
+    overflow: visible !important;
+}
+@-webkit-keyframes animate-positive {
+    0% {
+      width: 0;
+    }
+}
+@keyframes animate-positive {
+    0% {
+      width: 0;
+    }
+}
