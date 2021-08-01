@@ -1,16 +1,14 @@
-/* Template Name: Engno - Bootstrap 4 Landing Personal Page Tamplat
-   Author: Zoyothemes
-   File Description: Main JS file of the template
+/* Template Name: Rishikesh Jha Portfolio 
 */
 
 
 ! function($) {
     "use strict";
 
-    var Engno = function() {};
+    var Rishi = function() {};
 
     // Preloader
-    Engno.prototype.initPreloader = function() {
+    Rishi.prototype.initPreloader = function() {
         $(window).on('load', function () {
             $('#status').fadeOut();
             $('#preloader').delay(350).fadeOut('slow');
@@ -18,7 +16,7 @@
     },
 
     // Menu Sticky Menu
-    Engno.prototype.initStickyMenu = function() {
+    Rishi.prototype.initStickyMenu = function() {
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
         
@@ -31,7 +29,7 @@
     },
 
     // Menu Sticky Menu
-    Engno.prototype.initSmoothLink = function() {
+    Rishi.prototype.initSmoothLink = function() {
         $('.navbar-nav a').on('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -42,7 +40,7 @@
     },
 
     // Scrollspy
-    Engno.prototype.initScrollspy = function() {
+    Rishi.prototype.initScrollspy = function() {
         $("#navbarCollapse").scrollspy({
             offset: 20
         });
@@ -63,7 +61,7 @@
     });
 
     // MagnificPopup
-    Engno.prototype.initMagnificPopup = function() {
+    Rishi.prototype.initMagnificPopup = function() {
         $('.mfp-image').magnificPopup({
             type: 'image',
             closeOnContentClick: true,
@@ -77,7 +75,7 @@
     },
     
     // OwlCarousel
-    Engno.prototype.initOwlCarousel = function() {
+    Rishi.prototype.initOwlCarousel = function() {
         $("#clients-testi").owlCarousel({
             autoPlay: 3000,
             items: 1,
@@ -88,7 +86,7 @@
     },
 
 
-    Engno.prototype.initWaveImage  = function() {
+    Rishi.prototype.initWaveImage  = function() {
         $("#wave_img").length && $("#wave_img").wavify({
             height: 100,
             bones: 3,
@@ -98,11 +96,11 @@
         });
     },
 
-    Engno.prototype.initFeatherIcon  = function() {
+    Rishi.prototype.initFeatherIcon  = function() {
         feather.replace()
     },
 
-    Engno.prototype.init = function() {
+    Rishi.prototype.init = function() {
         this.initStickyMenu();
         this.initSmoothLink();
         this.initScrollspy();
@@ -113,11 +111,11 @@
         this.initPreloader();
     },
     //init
-    $.Engno = new Engno, $.Engno.Constructor = Engno
+    $.Rishi = new Rishi, $.Rishi.Constructor = Rishi
 }(window.jQuery),
 
 //initializing
 function($) {
     "use strict";
-    $.Engno.init();
+    $.Rishi.init();
 }(window.jQuery);
