@@ -5,9 +5,8 @@
     <meta charset="utf-8" />
     <title>Rishikesh Jha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
-    <meta content="Zoyothemes" name="author" />
+    <meta name="description" content="Rishikesh Jha Portfolio" />
+    <meta content="Rishikesh Jha" name="author" />
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Bootstrap -->
@@ -96,7 +95,7 @@
                                 data-elements="Python Developer, Cloud Engineer"></span></h6>
                         <div class="mt-4 pt-4">
                             <a href="#contact" class="btn btn-primary mb-2 mr-3">Hire me</a>
-                            <a href="./doc/Rishikesh_Jha_Resume.docx" class="btn btn-pill btn-outline-primary mb-2" download>Download
+                            <a onClick="download1('https://JhaRishikesh.github.io/doc/resume.pdf')"  class="btn btn-pill btn-outline-primary mb-2" download>Download
                                 CV <i data-feather="download" class="fea icon-sm"></i></a>
                         </div>
                     </div>
@@ -633,20 +632,22 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
-    <script>function downloadf(pdfUrl) {
-            fetch(pdfUrl).then(resp => resp.arrayBuffer()).then(resp => {
-
-                // set the blog type to final pdf
-                const file = new Blob([resp], { type: 'application/pdf' });
-
-                // process to auto download it
-                const fileURL = URL.createObjectURL(file);
-                const link = document.createElement('a');
-                link.href = fileURL;
-                link.download = "FileName" + new Date() + ".pdf";
-                link.click();
-            });
-        }</script>
+    <script>
+        function download1(pdfUrl) {
+                fetch(pdfUrl).then(resp => resp.arrayBuffer()).then(resp => {
+        
+                    // set the blog type to final pdf
+                    const file = new Blob([resp], {type: 'application/pdf'});
+        
+                    // process to auto download it
+                    const fileURL = URL.createObjectURL(file);
+                    const link = document.createElement('a');
+                    link.href = fileURL;
+                    link.download = "Rishikesh Jha Resume "+".pdf";
+                    link.click();
+                });
+            }
+        </script>
     <!-- Slider -->
     <script src="js/owl.carousel.min.js "></script>
 
